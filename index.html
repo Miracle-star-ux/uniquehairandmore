@@ -477,6 +477,8 @@
     }
     .c-label { font-size: .7rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--violet); margin-bottom: 3px; }
     .c-value { font-size: .9rem; color: var(--text); }
+    .c-value a { color: var(--violet); text-decoration: none; transition: color .2s; }
+    .c-value a:hover { color: var(--plum); text-decoration: underline; }
     .btn-whatsapp {
       display: inline-flex; align-items: center; gap: 10px;
       padding: 14px 32px;
@@ -537,6 +539,14 @@
       transition: filter .25s, transform .25s;
     }
     .btn-submit:hover { filter: brightness(1.12); transform: translateY(-2px); }
+
+    /* form note */
+    .form-note {
+      font-size: .75rem; color: var(--muted); text-align: center;
+      margin-top: 14px; line-height: 1.6;
+    }
+    .form-note a { color: var(--violet); text-decoration: none; }
+    .form-note a:hover { text-decoration: underline; }
 
     /* ─── FOOTER ─── */
     footer {
@@ -651,9 +661,10 @@
 <section id="about">
   <div class="about-inner">
     <div class="about-image-wrap">
+      <!-- Woman having her hair done / braided -->
       <img class="about-image"
-        src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=800&q=80"
-        alt="Hairstylist at work"/>
+        src="https://images.unsplash.com/photo-1560869713-7d0a29430803?w=800&q=80"
+        alt="Woman having her hair styled"/>
       <div class="about-badge">
         <strong>5+</strong>
         <span>Years<br/>Expert</span>
@@ -725,62 +736,71 @@
     <div class="section-line"></div>
   </div>
   <div class="products-grid">
+
+    <!-- Wig 1 -->
     <div class="product-card">
       <div class="product-img-wrap">
-        <img src="https://images.unsplash.com/photo-1595475207225-428b62bda831?w=600&q=80" alt="Straight Lace Front Wig"/>
+        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&q=80" alt="Silky Straight Lace Front Wig"/>
         <span class="product-tag">Best Seller</span>
       </div>
       <div class="product-body">
-        <h4>Silky Straight Lace Front</h4>
-        <p>24-inch 150% density, 13×4 HD lace. Pre-plucked hairline.</p>
+        <h4>Silky Straight Lace Front Wig</h4>
+        <p>24-inch 150% density, 13×4 HD lace. Pre-plucked natural hairline for a flawless, undetectable finish.</p>
         <div class="product-footer">
-          <span class="product-price">₦85,000</span>
+          <span class="product-price">£200</span>
           <a href="#contact" class="btn-cart">Order</a>
         </div>
       </div>
     </div>
+
+    <!-- Wig 2 -->
     <div class="product-card">
       <div class="product-img-wrap">
-        <img src="https://images.unsplash.com/photo-1559599101-f09722fb4948?w=600&q=80" alt="Curly Wig"/>
+        <img src="https://images.unsplash.com/photo-1560869713-7d0a29430803?w=600&q=80" alt="Deep Wave Closure Wig"/>
         <span class="product-tag">New In</span>
       </div>
       <div class="product-body">
         <h4>Deep Wave Closure Wig</h4>
-        <p>20-inch bouncy curls, 4×4 Swiss lace closure, natural black.</p>
+        <p>20-inch bouncy deep wave curls, 4×4 Swiss lace closure in natural black. Lustrous and full of volume.</p>
         <div class="product-footer">
-          <span class="product-price">₦72,000</span>
+          <span class="product-price">£200</span>
           <a href="#contact" class="btn-cart">Order</a>
         </div>
       </div>
     </div>
+
+    <!-- Hair Care Product 1 -->
     <div class="product-card">
       <div class="product-img-wrap">
-        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&q=80" alt="Hair Care Set"/>
+        <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=600&q=80" alt="Premium Hair Growth Oil"/>
+        <span class="product-tag">Top Pick</span>
+      </div>
+      <div class="product-body">
+        <h4>Premium Hair Growth Oil</h4>
+        <p>Infused with castor oil, argan oil &amp; biotin. Stimulates growth, reduces breakage, and adds shine daily.</p>
+        <div class="product-footer">
+          <span class="product-price">£200</span>
+          <a href="#contact" class="btn-cart">Order</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hair Care Product 2 -->
+    <div class="product-card">
+      <div class="product-img-wrap">
+        <img src="https://images.unsplash.com/photo-1585232350744-77b3e1a41f5d?w=600&q=80" alt="Luxury Hair Care Kit"/>
         <span class="product-tag">Kit</span>
       </div>
       <div class="product-body">
         <h4>Luxury Hair Care Kit</h4>
-        <p>Includes growth oil, silk serum, deep conditioner & edge control.</p>
+        <p>Complete set: growth oil, silk serum, deep conditioner &amp; edge control — everything your hair needs to thrive.</p>
         <div class="product-footer">
-          <span class="product-price">₦18,500</span>
+          <span class="product-price">£200</span>
           <a href="#contact" class="btn-cart">Order</a>
         </div>
       </div>
     </div>
-    <div class="product-card">
-      <div class="product-img-wrap">
-        <img src="https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=600&q=80" alt="Kinky Coily Wig"/>
-        <span class="product-tag">Natural</span>
-      </div>
-      <div class="product-body">
-        <h4>Kinky Coily Afro Unit</h4>
-        <p>18-inch 4C afro texture, full lace, ultra-natural finish.</p>
-        <div class="product-footer">
-          <span class="product-price">₦68,000</span>
-          <a href="#contact" class="btn-cart">Order</a>
-        </div>
-      </div>
-    </div>
+
   </div>
 </section>
 
@@ -801,7 +821,7 @@
     </div>
     <div class="testi-card">
       <div class="testi-stars">★★★★★</div>
-      <p class="testi-text">"I ordered the silky straight wig and it arrived beautifully packaged. The quality is premium — worth every kobo. Will definitely reorder!"</p>
+      <p class="testi-text">"I ordered the silky straight wig and it arrived beautifully packaged. The quality is premium — worth every penny. Will definitely reorder!"</p>
       <div class="testi-author">
         <div class="testi-avatar">F</div>
         <div><p class="testi-name">Fatima B.</p><p class="testi-role">Abuja, Nigeria</p></div>
@@ -820,7 +840,7 @@
       <p class="testi-text">"Professional, talented, and incredibly warm. My deep wave install looked so natural. I felt like a completely new woman walking out of there!"</p>
       <div class="testi-author">
         <div class="testi-avatar">T</div>
-        <div><p class="testi-name">Temi A.</p><p class="testi-role">Ibadan, Nigeria</p></div>
+        <div><p class="testi-name">Temi A.</p><p class="testi-role">Accra, Ghana</p></div>
       </div>
     </div>
     <!-- Duplicates for seamless infinite loop -->
@@ -834,10 +854,10 @@
     </div>
     <div class="testi-card">
       <div class="testi-stars">★★★★★</div>
-      <p class="testi-text">"I ordered the silky straight wig and it arrived beautifully packaged. The quality is premium — worth every kobo. Will definitely reorder!"</p>
+      <p class="testi-text">"I ordered the silky straight wig and it arrived beautifully packaged. The quality is premium — worth every penny. Will definitely reorder!"</p>
       <div class="testi-author">
         <div class="testi-avatar">F</div>
-        <div><p class="testi-name">Fatima B.</p><p class="testi-role">Abuja, Nigeria</p></div>
+        <div><p class="testi-name">Fatima B.</p><p class="testi-role">Nairobi, Kenya</p></div>
       </div>
     </div>
     <div class="testi-card">
@@ -853,7 +873,7 @@
       <p class="testi-text">"Professional, talented, and incredibly warm. My deep wave install looked so natural. I felt like a completely new woman walking out of there!"</p>
       <div class="testi-author">
         <div class="testi-avatar">T</div>
-        <div><p class="testi-name">Temi A.</p><p class="testi-role">Ibadan, Nigeria</p></div>
+        <div><p class="testi-name">Temi A.</p><p class="testi-role">Accra, Ghana</p></div>
       </div>
     </div>
   </div>
@@ -872,17 +892,30 @@
       </p>
       <div class="contact-item">
         <div class="c-icon">📍</div>
-        <div><p class="c-label">Location</p><p class="c-value">Kano, Nigeria (DMs & delivery available nationwide)</p></div>
+        <div>
+          <p class="c-label">Location</p>
+          <p class="c-value">Manchester &amp; London, UK (Delivery available nationwide)</p>
+        </div>
       </div>
       <div class="contact-item">
         <div class="c-icon">📱</div>
-        <div><p class="c-label">WhatsApp / Phone</p><p class="c-value">+234 800 000 0000</p></div>
+        <div>
+          <p class="c-label">WhatsApp / Phone</p>
+          <p class="c-value">
+            <a href="tel:+447437597166">+44 7437 597166</a>
+          </p>
+        </div>
       </div>
       <div class="contact-item">
         <div class="c-icon">📸</div>
-        <div><p class="c-label">Instagram</p><p class="c-value">@uniquehairandmore</p></div>
+        <div>
+          <p class="c-label">Instagram</p>
+          <p class="c-value">
+            <a href="https://instagram.com/uniquehairandmore" target="_blank">@uniquehairandmore</a>
+          </p>
+        </div>
       </div>
-      <a href="https://wa.me/2348000000000?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment"
+      <a href="https://wa.me/447437597166?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment"
          class="btn-whatsapp" target="_blank">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
           <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
@@ -891,39 +924,57 @@
       </a>
     </div>
 
-    <form class="contact-form" onsubmit="handleSubmit(event)">
+    <!--
+      FORM SETUP INSTRUCTIONS:
+      This form uses Formspree (https://formspree.io) — a free service that sends
+      form submissions directly to your email inbox.
+
+      To activate it:
+      1. Go to https://formspree.io and create a free account
+      2. Create a new form and copy your unique form ID (looks like: xpzgkdqr)
+      3. Replace "YOUR_FORM_ID" in the action URL below with your actual form ID
+      4. From then on, every submission will land in your email — no backend needed!
+    -->
+    <form class="contact-form"
+          action="https://formspree.io/f/xbdqkobw"
+          method="POST">
       <h3 class="form-title">Send a Message</h3>
       <p class="form-subtitle">We'll get back to you within 24 hours ✨</p>
       <div class="form-row">
         <div class="form-group">
           <label for="fname">First Name</label>
-          <input type="text" id="fname" placeholder="Amaka" required/>
+          <input type="text" id="fname" name="first_name" placeholder="Amaka" required/>
         </div>
         <div class="form-group">
           <label for="lname">Last Name</label>
-          <input type="text" id="lname" placeholder="Okafor" required/>
+          <input type="text" id="lname" name="last_name" placeholder="Okafor" required/>
         </div>
       </div>
       <div class="form-group">
         <label for="email">Email Address</label>
-        <input type="email" id="email" placeholder="amaka@example.com" required/>
+        <input type="email" id="email" name="email" placeholder="amaka@example.com" required/>
       </div>
       <div class="form-group">
         <label for="service">Service Interested In</label>
-        <select id="service">
+        <select id="service" name="service">
           <option value="">— Select a service —</option>
           <option>Wig Purchase</option>
           <option>Hair Styling</option>
           <option>Custom Wig Install</option>
+          <option>Braiding</option>
           <option>Hair Care Products</option>
           <option>Other</option>
         </select>
       </div>
       <div class="form-group">
         <label for="message">Your Message</label>
-        <textarea id="message" placeholder="Tell us about your dream look…" required></textarea>
+        <textarea id="message" name="message" placeholder="Tell us about your dream look…" required></textarea>
       </div>
-      <button type="submit" class="btn-submit" id="submitBtn">Send Message ✦</button>
+      <button type="submit" class="btn-submit">Send Message ✦</button>
+      <p class="form-note">
+        📬 Messages are sent directly to your inbox via <a href="https://formspree.io" target="_blank">Formspree</a>.<br/>
+        Remember to replace <strong>YOUR_FORM_ID</strong> in the code with your actual Formspree ID.
+      </p>
     </form>
   </div>
 </section>
@@ -935,7 +986,7 @@
       <a class="nav-logo" href="#hero">Unique <span>Hair</span> & More</a>
       <p>Luxury wigs, expert styling, and premium hair care — crafted for every queen who knows she deserves the best.</p>
       <div class="footer-socials">
-        <a class="social-btn" href="#" title="Instagram" aria-label="Instagram">
+        <a class="social-btn" href="https://instagram.com/uniquehairandmore" target="_blank" title="Instagram" aria-label="Instagram">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
         </a>
         <a class="social-btn" href="#" title="TikTok" aria-label="TikTok">
@@ -944,7 +995,7 @@
         <a class="social-btn" href="#" title="Facebook" aria-label="Facebook">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
         </a>
-        <a class="social-btn" href="#" title="WhatsApp" aria-label="WhatsApp">
+        <a class="social-btn" href="https://wa.me/447437597166" target="_blank" title="WhatsApp" aria-label="WhatsApp">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
         </a>
       </div>
@@ -964,6 +1015,7 @@
         <li><a href="#services">Wig Sales</a></li>
         <li><a href="#services">Hair Styling</a></li>
         <li><a href="#services">Wig Install</a></li>
+        <li><a href="#services">Braiding</a></li>
         <li><a href="#services">Hair Care</a></li>
       </ul>
     </div>
@@ -994,24 +1046,6 @@
     mobileMenu.classList.remove('open');
   }
 
-  // Contact form submission
-  function handleSubmit(e) {
-    e.preventDefault();
-    const btn = document.getElementById('submitBtn');
-    btn.textContent = 'Sending…';
-    btn.disabled = true;
-    setTimeout(() => {
-      btn.textContent = '✓ Message Sent! We\'ll be in touch soon.';
-      btn.style.background = 'linear-gradient(135deg,#25D366,#1da050)';
-      e.target.reset();
-      setTimeout(() => {
-        btn.textContent = 'Send Message ✦';
-        btn.style.background = '';
-        btn.disabled = false;
-      }, 4000);
-    }, 1400);
-  }
-
   // Scroll reveal animation
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -1031,10 +1065,3 @@
 </script>
 </body>
 </html>
-echo "# uniquehairandmore" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/Miracle-star-ux/uniquehairandmore.git
-git push -u origin main
